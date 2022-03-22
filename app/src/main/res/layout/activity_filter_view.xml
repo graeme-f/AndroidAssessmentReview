@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/filter_toolbar"
+            android:background="@color/design_default_color_on_primary">
+            <include layout="@layout/general_custom_action_bar"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which classrooms to display"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current"
+                    android:onClick="onClassroomFilter"
+                    android:id="@+id/currentClassrooms"
+                    android:checked="true"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:onClick="onClassroomFilter"
+                    android:id="@+id/allClassrooms"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Archived"
+                    android:onClick="onClassroomFilter"
+                    android:id="@+id/archivedClassrooms"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="20sp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer Science"
+                android:onClick="onSubjectClicked"
+                android:id="@+id/CS"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mathematics"
+                android:onClick="onSubjectClicked"
+                android:id="@+id/Maths"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ASA"
+                android:onClick="onSubjectClicked"
+                android:id="@+id/ASA"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:onClick="onSubjectClicked"
+                android:id="@+id/Other"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade"
+                android:textSize="20sp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade 12"
+                android:onClick="onGradeClicked"
+                android:id="@+id/Grade12"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade 11"
+                android:onClick="onGradeClicked"
+                android:id="@+id/Grade11"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade 10"
+                android:onClick="onGradeClicked"
+                android:id="@+id/Grade10"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade 9"
+                android:onClick="onGradeClicked"
+                android:id="@+id/Grade9"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade 8"
+                android:onClick="onGradeClicked"
+                android:id="@+id/Grade8"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:onClick="onGradeClicked"
+                android:id="@+id/GradeNone"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

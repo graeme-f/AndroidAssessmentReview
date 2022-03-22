@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.1215" />
         <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1215" />
+        <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/activity_filter_view.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/activity_main.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/classroom_custom_action_bar.xml" value="0.25" />
         <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/classroom_view.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/filter.xml" value="0.1" />
+        <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/filter_view.xml" value="0.25" />
+        <entry key="..\:/Users/Graeme/AndroidStudioProjects/AssessmentReview/app/src/main/res/layout/general_custom_action_bar.xml" value="0.209375" />
       </map>
     </option>
   </component>

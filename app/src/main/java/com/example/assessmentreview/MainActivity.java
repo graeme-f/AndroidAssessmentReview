@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,9 +32,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: Filtering");
+                showFilter();
             }
         });
         initClassroomData();
+    }
+
+    public void showFilter(){
+        Intent intent = new Intent(this, FilterView.class);
+        startActivity(intent);
     }
 
     private void initClassroomData(){
